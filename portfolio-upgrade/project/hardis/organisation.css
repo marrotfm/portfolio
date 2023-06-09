@@ -1,0 +1,222 @@
+html {
+    scroll-behavior: smooth;
+}
+* {
+    font-family: 'Noto Sans', sans-serif;
+  
+  }
+
+main{ 
+
+    margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+main h1{
+font-size: 140px;
+}
+
+
+
+main p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+.float {
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Arial Black", sans-serif;
+    color: rgb(50, 50, 50);
+    width: 80%;
+    margin: auto;}
+
+body {
+    background-color: #80ABD1;
+    margin: 0;
+}
+header {
+    background-color: lightsteelblue;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin: 10px 50px;
+}
+#hardis-logo {
+    width: 80px;
+    height: 40px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0px;
+    margin: 0;
+}
+ .menu {
+    flex-basis: 700px;
+    padding: 0px 30px;
+    border-left: 2px solid rgb(175, 175, 175);
+    border-right: 2px solid rgb(175, 175, 175);
+}
+.menu li {
+    margin: 10px;
+}
+header img {
+    width: 30px;
+}
+.lien-logo {
+    flex-basis: 200px;
+    align-items: center;
+}
+.lien-logo li {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+}
+header nav a{
+    color: rgb(80, 80, 80);
+    text-decoration: none;
+    transition: transform .4s;
+    font-weight: bold;
+}
+header nav a:hover, nav a:hover img{
+    transform: scale(1.08);
+}
+header .active {
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 3em;
+  } 
+
+main nav {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: lightsteelblue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 50px;
+  
+  }
+  
+  main div {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    margin: 0 20px; 
+    
+
+  }
+
+
+  
+  main img {
+    width: 200px;
+    height: 200px;
+  }
+  
+  main p {
+    margin-top: 10px; 
+  }
+
+  main h1 {
+    text-align: center;
+    margin: 20px 0;}
+
+main h2 {
+    text-align: center; 
+    margin: 20px 0;
+
+}
+
+
+footer {
+    margin-top: 30px;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    color: rgb(110, 110, 110);
+    flex-wrap: wrap;
+}
+footer img {
+    width: 20%;
+}
+footer li {
+    font-variant-caps: all-small-caps;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer .mail a {
+    font-variant-caps:normal;
+}
+
+#organigramme {
+    width: 80%;
+    height: 80%;
+}
+
+article{
+display: flex;
+    margin: auto
+    
+}
+
+
+main article nav {
+background-color: lightsteelblue;
+border: solid;
+
+}
+
+aside nav {
+    background-color:  #80ABD1;
+    border-radius: 50px;
+    
+    
+}
+
+#section2 nav nav {
+text-align:center;
+background-color: rgb(30,144,255,0.8);
+color: #fff;
+box-shadow: 5px 5px 5px black;
+border-radius: 50px;
+padding: 1em;
+max-width: 600px;
+border: solid;
+
+}
+
+#section1 nav nav {
+    text-align:center;
+    background-color: rgb(30,144,255,0.8);
+    color: #fff;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50px;
+    padding: 1em;
+    max-width: 600px;
+    border: solid;
+    
+    }

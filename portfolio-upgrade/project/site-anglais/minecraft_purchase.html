@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+	    <meta charset="UTF-8" />
+	    <title>Minecraft page</title>
+	    <link rel="stylesheet" href="styleSheet.css" />
+	</head>
+	<body>
+        <header>
+            <nav>
+                <a href="homepage.html"><img src="images/taya-logo.png" alt="Logo"></a>
+                <ul>
+                    <li><a href="minecraft.html">Minecraft</a></li>
+                    <li><a href="csgo.html">Counter Strike: Global Offensive</a></li>
+                    <li><a href="ark.html">Ark: Survival Evolved</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h2 id="banner">Payment for Minecraft Server </h2>
+        <main class="main-purchase">
+            <div>
+                <form action="validation_page.html">
+                    <div>
+                        <label>Choose an offer: </label>
+                        <select>
+                            <option>Chicken offer ($9.69)</option>
+                            <option>Creeper offer ($19.69)</option>
+                            <option>Wither offer ($39.69)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <div>
+                            <label>Duration in months: </label>
+                            <input type="number" min="1" value="1">
+                        </div>
+                        <div>
+                            <input type="text" maxlength="8" placeholder="Enter promo code">
+                        </div>
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Enter your mail" required>
+                    </div>
+                    <div>
+                        <p>Method of payment:</p>
+                        <input type="radio" name="payment" id="cb" checked>
+                        <label for="cb"><img src="images/cb.jpeg" alt="Bancary Card"></label>
+                        <input type="radio" name="payment" id="mastercard">
+                        <label for="mastercard"><img src="images/mastercard.png" alt="MasterCard"></label>
+                        <input type="radio" name="payment" id="paypal">
+                        <label for="paypal"><img src="images/paypal.png" alt="Paypal"></label>
+                        <input type="radio" name="payment" id="applepay">
+                        <label for="applepay"><img src="images/apple-pay.png" alt="ApplePay"></label>
+                    </div>
+                    <div>
+                        <input type="text" minlength="16" maxlength="16" placeholder="Credit card number" required>
+                        <div> 
+                            <div>
+                                <label>Expiration date: </label>
+                                <input type="number" min="1" max="12" value="1">
+                                <p>/</p>
+                                <input type="number" min="2023" value="2023">
+                            </div>
+                            <div>
+                                <label>Verification Code: </label>
+                                <input type="text" minlength="3" maxlength="3" required>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Validate">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>Copyright © 2023 Taya Inc. All rights reserved.</p>
+            <ul>
+                <li><a href="#">Privacy Police</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Sales and Refunds</a></li>
+                <li><a href="#">Legal</a></li>
+            </ul>
+            <p>Contact: <a href="mailto:contact@taya.com">contact@taya.com</a></p>
+        </footer>
+	</body>
+</html>

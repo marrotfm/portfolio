@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>Mon portfolio</title>
+      <link rel="stylesheet" href="../../css-page/styleSheet.css"> <!-- Feuille de style principale -->
+      <link rel="stylesheet" href="../../css-page/color-system.css"> <!-- Changement de thème ici -->
+    </head>
+    <body>
+        <header>
+            <nav>
+              <ul>
+                <li><a href="../../html-page/homepage.html">Accueil</a></li>
+                <li><a href="../../html-page/qui-suis-je.html">Qui-suis-je ?</a></li>
+                <li><a href="../../html-page/mes-projets.html">Mes projets</a></li>
+                <li><a href="../../html-page/me-contacter.html">Me contacter</a></li>
+              </ul>
+            </nav>
+            <hr>
+        </header>
+        <main id="installationPoste">
+            <aside>
+                <div>
+                  <figure>
+                    <img src="../../img/photo-profil-licorne.png" alt="Photo de profil" class="profil">
+                  </figure>
+                  <!-- Informations personnelles -->
+                  <div class="infoPerso">
+                    <h2>Matys Marrot-Fourralo</h2>
+                    <ul>
+                      <li>&#128100; Étudiant en première année du BUT informatique</li>
+                      <li>&#128205; IUT2 Place Doyen Gosse</li>
+                      <li>&#128381; 0612345678</li>
+                      <li>&#128231; <a href="mailto:matys.marrot-fourralo@etu.univ-grenoble-alpes.fr">Matys.Marrot-Fourralo@etu.univ-grenoble-alpes.fr</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+            <div class="resume">
+                <div>
+                    <a href="image/Capture01.png" target="_blank"><img src="image/Capture01.png" alt=""></a>
+                    <p>
+                        On peut voir sur cette capture d'écran l'empreinte de référence que l'on peut trouver sur un site officiel du projet Debian ainsi que l'empreinte calculée localement sur la copie de l'image ISO stockée sur la station Linux.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture02.png" target="_blank"><img src="image/Capture02.png" alt=""></a>
+                    <p>
+                        L'installateur Debian lorsqu'il nous demande de saisir le nom de login de l'utilisateur qui sera créé.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture03.png" target="_blank"><img src="image/Capture03.png" alt=""></a>
+                    <p>
+                        Le bureau KDE/Plasma une fois installé.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture04.png" target="_blank"><img src="image/Capture04.png" alt=""></a>
+                    <p>
+                        Cette capture montre que la commande <code>sudo -i</code> fonctionne correctement.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture05.png" target="_blank"><img src="image/Capture05.png" alt=""></a>
+                    <p>
+                        Le package <code>git</code> est bel et bien installé, et le numéro de version est correct.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture06.png" target="_blank"><img src="image/Capture06.png" alt=""></a>
+                    <p>
+                        Le JDK à été installé avec succès.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture07.png" target="_blank"><img src="image/Capture07.png" alt=""></a>
+                    <p>
+                        L’IDE IntelliJ IDEA Community une fois installé sous forme d'archive
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture08.png" target="_blank"><img src="image/Capture08.png" alt=""></a>
+                    <p>
+                        L’IDE IntelliJ IDEA Community une fois installé sous forme de package snap 
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture09.png" target="_blank"><img src="image/Capture09.png" alt=""></a>
+                    <p>
+                        L’IDE IntelliJ IDEA Community une fois installé sous forme de package flatpak
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Capture10.png" target="_blank"><img src="image/Capture10.png" alt=""></a>
+                    <p>
+                        L'espace de stockage restant après toutes ces installations.
+                    </p>
+                </div>
+                <div>
+                    <a href="image/Matys-MARROT-A2.pdf" target="_blank"><img src="image/Capture11.png" alt=""></a>
+                    <p>
+                        Carte mentale résumant l’installation d’un poste de travail pour le développement.
+                    </p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <hr>
+            <nav>
+              <ul>
+                <li><a href="https://github.com" target="_blank"><img src="../../img/github-logo.png" alt="Github"></a></li>
+                <li><a href="https://twitter.com" target="_blank"><img src="../../img/twitter-logo.png" alt="Twitter"></a></li>
+                <li><a href="https://instagram.com" target="_blank"><img src="../../img/instagram-logo.png" alt="Instagram"></a></li>
+              </ul>
+            </nav>
+        </footer>
+        <script>
+            var prevScrollpos = window.pageYOffset;
+            var aside = document.querySelector("aside");
+            var delta = 40; // Nombre de pixels pour détecter le défilement
+            window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (Math.abs(prevScrollpos - currentScrollPos) > delta) {
+                    if (currentScrollPos > prevScrollpos) {
+                        // Faites défiler vers le bas
+                        aside.classList.add("plie");
+                    } else {
+                        // Faites défiler vers le haut
+                        aside.classList.remove("plie");
+                    }
+                    prevScrollpos = currentScrollPos;
+                }
+            }
+        </script>            
+    </body>
+</html>

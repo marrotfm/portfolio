@@ -1,0 +1,396 @@
+/* All pages */
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    margin: 0px ;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Animation */
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    } 
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    font-size: 1.1em;
+    z-index: 2;
+}
+header>nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+header a {
+    color: rgb(102, 176, 255);
+    font-size: 1.5em;
+}
+header a:hover {
+    color: rgb(15, 131, 255);
+}
+header hr {
+    margin-bottom: 0;
+}
+header .actif {
+    font-weight: bold;
+}
+
+/* Main */
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: apparition 0.8s ease-out;
+    margin: 0 10px;
+}
+
+/* Aside */
+main aside {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 68px;
+    z-index: 3;
+}
+main aside div {
+    display: flex;
+    flex-basis: 600px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+}
+main aside div .infoPerso {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+main aside .profil {
+    width: 150px;
+    height: 150px;
+    border-radius: 90px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+main aside div ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: opacity 0.3s ease;
+}
+main aside figure {
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    text-align: center;
+}
+main aside h2 {
+    font-size: 2em;
+    margin: 0;
+}
+.plie .profil {
+    width: 75px;
+    height: 75px;
+}
+.plie ul {
+    display: none;
+}
+
+
+/* Article */
+article {
+    flex-grow: 1;
+    padding-top: 160px;
+    padding-bottom: 80px;
+}
+
+/* Qui-suis-je page */
+#qui-suis-je .groupe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#qui-suis-je .groupe div {
+    border-radius: 20px;
+    width: 500px;
+    margin: 10px;
+}
+#qui-suis-je .groupe div h3{
+    text-align: center;
+    margin: 10px;
+}
+
+/* mes-projets page */
+
+#mes-projets .groupe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#mes-projets .groupe div {
+    border-radius: 20px;
+    flex-basis: 300px;
+    min-height: 150px;
+}
+#mes-projets .groupe .project {
+    position: relative;
+}
+#mes-projets .groupe .project img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 10px;
+}
+#mes-projets .groupe .project h3{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+#mes-projets .groupe .project ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#mes-projets .groupe .project li {
+    text-align: center;
+    margin: 10px;
+}
+#mes-projets .groupe .project a{
+    color: rgb(102, 176, 255);
+    font-weight: bold;
+    text-decoration: none;
+}
+#mes-projets .groupe .project a:hover {
+    color: rgb(15, 131, 255);
+    text-decoration: underline;
+}
+#mes-projets .groupe .project p {
+    margin: 10px;
+}
+
+#mes-projets .v-groupe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+#mes-projets .v-groupe div {
+    border-radius: 20px;
+    margin: 10px;
+    width: 800px;
+    padding: 5px;
+}
+#mes-projets .v-groupe div a {
+    text-decoration: underline;
+}
+#mes-projets .v-groupe a {
+    transition: transform .4s;
+    text-decoration: none;
+}
+#mes-projets .v-groupe a:hover {
+    transform: scale(1.04);
+}
+
+
+
+
+
+
+/* Footer */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+footer hr {
+    margin-top: 0;
+}
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer a img {
+    height: 50px;
+    width: 50px;
+    transition: transform .4s;
+}
+footer a:hover img {
+    transform: scale(1.08);
+}
+
+/* Présentation sae installation poste de travail */
+#installationPoste {
+    padding-top: 250px;
+    padding-bottom: 75px;
+}
+#installationPoste .resume {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#installationPoste .resume div {
+    display: flex;
+    flex-direction: row;
+    width: 700px;
+    border-radius: 10px;
+    align-items: center;
+    margin: 25px;
+}
+#installationPoste .resume div p {
+    font-size: 1.2em;
+}
+#installationPoste .resume div img {
+    width: 300px;
+    height: 225px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: width 0.3s ease, height 0.3s ease;
+}
+#installationPoste .resume div iframe {
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Me contacter */
+#contact>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+#contact .form {
+    border: 2px solid rgb(70, 70, 70);
+    padding: 20px;
+    border-radius: 20px;
+    width: 600px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+}
+
+#contact form div:first-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#contact form div:first-child input{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+#contact form div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+#contact form div:nth-child(2) input {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    width: 100%;
+}
+#contact form div:nth-child(3) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+#contact form div:nth-child(3) label {
+    text-decoration: underline;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+#contact form div:nth-child(3) textarea {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    resize: none;
+    height: 200px;
+}
+
+#contact form div:nth-child(4)  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#contact form div:nth-child(4) input {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    width: 100px;
+}
+
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

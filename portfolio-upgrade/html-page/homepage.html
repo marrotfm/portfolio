@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mon portfolio</title>
+        <link rel="stylesheet" href="../css-page/styleSheet.css"> <!-- Feuille de style principale -->
+        <link rel="stylesheet" href="../css-page/color-system.css"> <!-- Changement de thème ici -->
+    </head>
+
+    <body>
+        <!-- 
+          Barre de navigation principale.
+          À noter : le lien actif contient un nom de classe "actif"
+        -->
+      <header>
+        <nav>
+          <ul>
+            <li><a class="actif" href="homepage.html">Accueil</a></li>
+            <li><a href="qui-suis-je.html">Qui-suis-je ?</a></li>
+            <li><a href="mes-projets.html">Mes projets</a></li>
+            <li><a href="me-contacter.html">Me contacter</a></li>
+          </ul>
+        </nav>
+        <hr>
+      </header>
+      <main>
+        <!-- 
+          Menu latéral montrant une photo de profil
+          ainsi que des informations personnelles
+        -->
+        <aside>
+          <div>
+            <figure>
+              <img src="../img/photo-profil-licorne.png" alt="Photo de profil" class="profil">
+            </figure>
+            <!-- Informations personnelles -->
+            <div class="infoPerso">
+              <h2>Matys Marrot-Fourralo</h2>
+              <ul>
+                <li>&#128100; Étudiant en première année du BUT informatique</li>
+                <li>&#128205; IUT2 Place Doyen Gosse</li>
+                <li>&#128381; 0612345678</li>
+                <li>&#128231; <a href="mailto:matys.marrot-fourralo@etu.univ-grenoble-alpes.fr">Matys.Marrot-Fourralo@etu.univ-grenoble-alpes.fr</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Le contenu principal apparait ici -->
+        <article>
+
+          <!-- Titre de la page -->
+          <h1>Bienvenue sur mon portfolio</h1>
+
+          <p>
+            Ici, vous pourrez en apprendre plus sur moi, sur mes projets et mes passions. Vous trouverez également différents moyen de me contacter.
+          </p>
+
+          <!-- Il est optionnellement possible de diviser le contenu principale en sections -->
+          <section>
+
+            <!-- Titre de la page -->
+            <h2>Ma première section</h2>
+            
+            <p>
+              Vous allez découvrir qui je suis, mon parcours scolaires, mes passions. Vous pourrez également voir mes projets scolaires et personnelles, des projets plus ou moins lointain.
+            </p>
+          </section>
+        </article>
+
+      </main>
+      <!-- Barre des réseaux sociaux -->
+      <footer>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="https://github.com" target="_blank"><img src="../img/github-logo.png" alt="Github"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="../img/twitter-logo.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="../img/instagram-logo.png" alt="Instagram"></a></li>
+          </ul>
+        </nav>
+      </footer>
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        var aside = document.querySelector("aside");
+        var delta = 40; // Nombre de pixels pour détecter le défilement
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (Math.abs(prevScrollpos - currentScrollPos) > delta) {
+                if (currentScrollPos > prevScrollpos) {
+                    // Faites défiler vers le bas
+                    aside.classList.add("plie");
+                } else {
+                    // Faites défiler vers le haut
+                    aside.classList.remove("plie");
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        }
+      </script>
+    </body>
+  </html>

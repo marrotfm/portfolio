@@ -1,0 +1,722 @@
+/* Fonts */
+@font-face {
+    font-family: 'PixelBug';
+    src: url('fonts/pixelbug-webfont.eot');
+    src: url('fonts/pixelbug-webfont.woff2') format('woff2'),
+         url('fonts/pixelbug-webfont.woff') format('woff'),
+         url('fonts/pixelbug-webfont.ttf') format('truetype'),
+         url('fonts/pixelbug-webfont.svg#PixelBug') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+  
+/* Animation */
+
+@keyframes apparition {
+    from {
+        opacity: .7;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    } 
+}
+
+/*Body*/
+
+body{
+    margin: 0;
+}
+
+
+/* Header */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: rgb(30, 30, 30);
+    z-index: 3;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 70%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+header li {
+    text-transform: uppercase;
+    font-size: 1.3em;
+    margin: 20px
+}
+header .active {
+    font-weight: bold;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header a:hover {
+    text-decoration: underline;
+}
+header a img {
+    position: absolute;
+    top: 5px;
+    left: 30px;
+    width: 70px;
+    height: 70px;
+    transition: transform .4s;
+}
+header img:hover {
+    transform: scale(1.05); 
+}
+header nav{
+    /*
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    */
+    width: 100%;
+    position: relative;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* body */
+
+/* main */
+
+
+
+/* Bannière */
+#banner {
+    text-transform: uppercase;
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    font-family: 'PixelBug', Verdana;
+    background: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    color: white;
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+/* Homepage main */
+#main-homepage {
+    display: flex;
+    justify-content: center;
+    animation: apparition 0.8s ease-out;
+    flex-wrap: wrap;
+}
+#main-homepage div {
+    width: 100%;
+    height: 800px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform .4s;
+}
+#main-homepage div:hover h3 {
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text; /* appliquer le dégradé uniquement au texte */
+    -webkit-text-fill-color: transparent; /* masquer la couleur de texte par défaut */
+    background-clip: text; /* appliquer le dégradé uniquement au texte */
+}
+#main-homepage div:first-child {
+    background-image: url(images/minecraft-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+}
+#main-homepage div:first-child:hover {
+    background-image: url(images/minecraft-background2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; 
+    transform: scale(1.02);  
+}
+#main-homepage div:nth-child(2){
+    background-image: url(images/csgo-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#main-homepage div:nth-child(2):hover {
+    background-image: url(images/csgo-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.02);
+}
+
+#main-homepage div:last-child {
+    background-image: url(images/ark-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#main-homepage div:last-child:hover {
+    background-image: url(images/ark-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.02);
+}
+
+#main-homepage div h3 {
+    font-size: 2em;
+    font-family: 'PixelBug', Verdana;
+    text-align: center;
+    color: white;
+}
+#main-homepage div:hover h3 {
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text; /* appliquer le dégradé uniquement au texte */
+    -webkit-text-fill-color: transparent; /* masquer la couleur de texte par défaut */
+    background-clip: text; /* appliquer le dégradé uniquement au texte */
+}
+
+#main-homepage div p {
+    margin: 20px;
+    color: rgba(0, 0, 0, .0);
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#main-homepage div:hover p {
+    color: white;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+#main-homepage td, #main-homepage th {
+    border: 1px solid white;
+    border-collapse: collapse;
+    color: white;
+}
+#main-homepage .bouton {
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.5em;
+    box-shadow: 0px -0px 0px 0px rgba(248, 64, 64, 0.5), 0px 0px 0px 0px rgba(255, 143, 39, 0.5);
+    transition: all .2s;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.bouton::after {
+    content: "";
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(225deg, #f52528 0%, #f57525 50%, #f5a925 100%);
+    position: absolute;
+    top: -100px;
+    left: -125px;
+    transition: all .5s;
+    z-index: -1;
+}
+.bouton:hover::after {
+    transform: rotate(150deg);
+}
+.bouton:hover {
+    transition: translate(0, -6px);
+    box-shadow: 20px -20px 25px 0 rgba(248, 64, 64, .25), -20px 20px 25px 0 rgba(255, 143, 39, .25);
+    transform: scale(1.09);
+}
+  
+/* Game page - main */
+.main-game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+}
+.main-game h1 {
+    font-size: 5em;
+    font-family: 'PixelBug';
+    background-image: linear-gradient(90deg, rgba(253,29,29,1) 0%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text; /* appliquer le dégradé uniquement au texte */
+    -webkit-text-fill-color: transparent; /* masquer la couleur de texte par défaut */
+    background-clip: text; /* appliquer le dégradé uniquement au texte */
+
+}
+.offer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: apparition 0.8s ease-out;
+    margin-bottom: 20px;
+}
+.offer>div {
+    position: relative;
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    border: 2px solid rgb(70, 70, 70);
+    height: 500px;
+    flex-basis: 275px;
+    padding-top: 120px;
+}
+
+/* Titre coloré en bandeau */
+.main-game div h2 {
+    font-size: 2em;
+    font-family: 'PixelBug';
+    text-transform: uppercase;
+    position: absolute;
+    top: 10px;
+    left: -15px;
+    margin: 0;
+    padding: 5px;
+    padding-left: 25px;
+    width: 262px;
+}
+.main-game div h2::after {
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 13px;
+    height: 15px;
+    z-index: 5;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+
+}
+.main-game div .thirdClass {
+    background: linear-gradient(90deg, rgb(150, 98, 7) 0%, rgb(213, 169, 46) 100%);
+}
+.main-game div .thirdClass::after {
+    background-color: rgb(101, 73, 2);
+}
+.main-game div .secondClass {
+    background: linear-gradient(90deg, rgb(154, 71, 3) 0%, rgb(193, 116, 53) 100%);
+}
+.main-game div .secondClass::after {
+    background-color: rgb(102, 54, 16);
+}
+.main-game div .firstClass {
+    background: linear-gradient(90deg, rgb(147, 8, 8) 0%, rgb(191, 46, 46) 100%);
+}
+.main-game div .firstClass::after {
+    background-color: rgb(83, 2, 2);
+}
+
+/* Prix du serveur */
+.offer>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.offer>div>div>p {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.offer>div>div>p:first-child {
+    font-size: 2.3em;
+    font-weight: bold;
+}
+.offer>div>div>p:last-child {
+    font-size: 1.3em;
+    color: rgb(93, 93, 93);
+}
+.offer>div>div>p:last-child>span {
+    color: rgb(144, 144, 144);
+    font-weight: normal;
+}
+
+/* Liste des infos du serveur */
+.main-game div ul {
+    margin: 0;
+    list-style: none;
+    align-self: flex-start;
+}
+.main-game div li {
+    margin-top: 5px;
+    font-size: 1.2em;
+    color: rgb(93, 93, 93);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-game div li span{
+    font-weight: normal;
+    color: white;
+}
+
+/* Bouton pour aller sur la page d'achat */
+.main-game .bouton {
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0px -0px 0px 0px rgba(248, 64, 64, 0.5), 0px 0px 0px 0px rgba(255, 143, 39, 0.5);
+    transition: all .2s;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+/* Vidéo en background */
+.background-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    filter: brightness(.5);
+    z-index: -1;
+}
+
+/* Section feedback pour les jeux */
+
+.feedback {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+.feedback h2 {
+    margin: 0;
+    font-size: 2em;
+}
+.feedback img {
+    margin: 10px;
+}
+.feedback>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.feedback>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-basis: 400px;
+    border: 2px solid gray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.feedback>div>div>div:first-child {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.feedback>div>div>div:first-child>p, .feedback>div>div>p {
+    font-size: 1.4em;
+    margin: 5px 10px;
+}
+.feedback>div>div>div:last-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.feedback>div>div>div:last-child>p {
+    font-size: 1.2em;
+    margin: 5px 10px;
+}
+.feedback>div>div>div:last-child>p:last-child {
+    text-align: justify;
+}
+.feedback span {
+    color: rgb(144, 144, 144);
+} 
+.feedback {
+    color: white;
+}
+
+/* Main purchase page */
+.main-purchase {
+    background-color: rgb(30, 30, 30);
+    display: flex;
+    justify-content: center;
+    padding: 130px;
+}
+.main-purchase>div {
+    border: 2px solid rgb(70, 70, 70);
+    padding: 10px;
+    border-radius: 20px;
+    flex-basis: 600px;
+}
+.main-purchase form {
+    display: flex;
+    flex-direction: column;
+}
+.main-purchase form>div {
+    margin-bottom: 10px;
+}
+.main-purchase label {
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-purchase form input:invalid {
+    border: 2px solid red;
+}
+/* Première ligne pour saisier l'offre voulu */
+.main-purchase form>div:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    background-color: white;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.main-purchase form>div:first-child select {
+    background-color: white;
+    border: none;
+    margin: 0;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Deuxième ligne de form pour saisir le nombre de mois d'abonnement et un code promo */
+.main-purchase form>div:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main-purchase form>div:nth-child(2)>div:first-child {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.main-purchase form>div:nth-child(2)>div:first-child input {
+    width: 50px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+.main-purchase form>div:nth-child(2)>div:nth-child(2) input{
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+/* Troisième ligne pour saisir son mail afin de recevoir les infos de payement et du serveur */
+.main-purchase form>div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+}
+.main-purchase form>div:nth-child(3)>input {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    width: 100%;
+}
+/* quatrième ligne pour saisir la méthode de payement */
+.main-purchase form>div:nth-child(4) {
+    color: white;
+}
+.main-purchase form>div:nth-child(4) p{
+    margin: 7px;
+}
+.main-purchase form>div:nth-child(4)>input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.main-purchase form>div:nth-child(4)>input[type="radio"]:checked + label>img{
+    transform: scale(1.2);
+}
+.main-purchase form>div:nth-child(4)>label>img {
+    height: 50px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+/* cinquième ligne pour rentrer les informations bancaires */
+.main-purchase form>div:nth-child(5) {
+    display: flex;
+    flex-direction: column;
+}
+.main-purchase form>div:nth-child(5)>input {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1.3em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+    margin-bottom: 10px;
+
+}
+.main-purchase form>div:nth-child(5)>div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main-purchase form>div:nth-child(5)>div>div {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(70, 70, 70);
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 5px;
+}
+.main-purchase form>div:nth-child(5)>div input {
+    width: 40px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+    margin-left: 10px;
+}
+.main-purchase form>div:nth-child(5)>div>div:first-child input:nth-child(4) {
+    width: 60px;
+    
+}
+.main-purchase form>div:nth-child(5)>div>div p{
+    margin: 0;
+}
+/* Dernier élément pour valider */
+.main-purchase form>input:last-child {
+    background-color: white;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 2px solid gray;
+    border-radius: 5px;
+    align-self: center;
+}
+
+/* Main validation page */
+#validation-main {
+    background-color: rgb(30, 30, 30);
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#validation-main h1 {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+}
+#validation-main img {
+    width: 200px;
+    height: 200px;
+}
+#validation-main p {
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+#validation-main .bouton {
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2em;
+    box-shadow: 0px -0px 0px 0px rgba(248, 64, 64, 0.5), 0px 0px 0px 0px rgba(255, 143, 39, 0.5);
+    transition: all .2s;
+    z-index: 1;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 70px;
+}
+footer p {
+    margin: 0;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    width: 500px;
+}
+footer li {
+    margin: 0;
+}
+footer a {
+    text-decoration: none;
+    color: rgb(220, 220, 220);
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

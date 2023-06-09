@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mes projets</title>
+        <link rel="stylesheet" href="../css-page/styleSheet.css"> <!-- Feuille de style principale -->
+        <link rel="stylesheet" href="../css-page/color-system.css"> <!-- Changement de thème ici -->
+      </head>
+
+    <body>
+
+        <!-- 
+          Barre de navigation principale.
+          À noter : le lien actif contient un nom de classe "actif"
+        -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li><a href="qui-suis-je.html">Qui-suis-je ?</a></li>
+            <li><a class="actif" href="mes-projets.html">Mes projets</a></li>
+            <li><a href="me-contacter.html">Me contacter</a></li>
+          </ul>
+        </nav>
+        <hr>
+      </header>
+      <main>
+
+        <!-- 
+          Menu latéral montrant une photo de profil
+          ainsi que des informations personnelles
+        -->
+        <aside>
+          <div>
+            <figure>
+              <img src="../img/photo-profil-licorne.png" alt="Photo de profil" class="profil">
+            </figure>
+            <!-- Informations personnelles -->
+            <div class="infoPerso">
+              <h2>Matys Marrot-Fourralo</h2>
+              <ul>
+                <li>&#128100; Étudiant en première année du BUT informatique</li>
+                <li>&#128205; IUT2 Place Doyen Gosse</li>
+                <li>&#128381; 0612345678</li>
+                <li>&#128231; <a href="mailto:matys.marrot-fourralo@etu.univ-grenoble-alpes.fr">Matys.Marrot-Fourralo@etu.univ-grenoble-alpes.fr</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Le contenu principal apparait ici -->
+        <article id="mes-projets">
+
+          <!-- Titre de la page -->
+          <h1>Mes projets personnels</h1>
+
+          <div class="groupe">
+            <div class="project">
+                <img src="../img/html-code.JPG" alt="code HTML">
+                <h3>Projets réalisés</h3>
+                <ul>
+                  <li><a href="http://anthonybouteiller.ovh/Matys/index.html" target="_blank">Cours HTML</a></li>
+                  <li><a href="http://anthonybouteiller.ovh/Matys/PrésentationCSS#" target="_blank">Cours CSS</a></li>
+                </ul>
+            </div>
+              <div class="project">
+                <img src="../img/swift-code.png" alt="code Swift">
+                <h3>Projet en cours</h3>                
+                <p>
+                  Apprends le Swift pour développer des applications iOS
+                </p>
+            </div>
+            <div class="project">
+              <h3>Projet lointain</h3>
+            </div>
+          </div> 
+
+          <h1>Mes projets scolaires</h1>
+          <div class="v-groupe">
+            <a href="../project/site-anglais/homepage.html" target="_blank">
+              <div>
+                <h3>Projet en Anglais</h3>
+                <ul>
+                  <li><strong>Objectif</strong> : Répondre au besoin d'un client en créant un site</li>
+                  <li><strong>Explications</strong> : En groupe de 3, nous avons dû créer un site afin de répondre au besoin d'un autre groupe.</li>
+                  <li><strong>Compétences utilisées</strong> : Comprendre les besoins d'un client, Travailler en groupe, Rédiger en anglais</li>
+                  <li><strong>Travail de groupe</strong> : Nous avons dû exprimer nos besoins et comprendre le besoin des autres en anglais, puis réaliser le site Internet</li>
+                  <li><strong>Travail d'équipe</strong> : J'ai réalisé la plupart du site Web</li>
+                </ul>
+              </div>
+            </a>
+            
+            <a href="../project/sae-installation-poste/presentation.html">
+              <div>
+                <h3>Situation d'apprentissage et d'évaluation</h3>
+                <ul>
+                  <li><strong>Objectif</strong> : Installation d'un poste de travail pour le développement</li>
+                  <li><strong>Compétences utilisées</strong> : Installation et configuration d'un système d'exploitation, Installation d'un IDE</li>
+                  <li><strong>Travail personnel</strong> : J'ai installé un système d'exploitation Linux (Debian) </li>
+                </ul>
+              </div>
+            </a>
+            <div>
+              <h3>Situation d'apprentissage et d'évaluation en Java</h3>
+              <ul>
+                <li><strong>Objectif</strong> : Créer une programme permettant d'identifier la catégorie d'une dépêche</li>
+                <li><strong>Compétences</strong> : Travail d'équipe, Optimisation des programmes</li>
+                <li><a href="../project/projet-sae-s1-01.zip" download>Télécharger le projet</a></li>
+              </ul>
+            </div>
+            <a href="../project/hardis/acceuil.html">
+              <div>
+                <h3>Situation d'apprentissage et d'évaluation 1.05/06</h3>
+                <ul>
+                  <li>Recueil des besoins et découverte de l'environnement économique et écologique</li>
+                  <li><strong>Compétences</strong> : Conduire un projet, Identifier ses aptitudes pour travailler dans une équipe</li>
+                  <li><strong>Objectifs</strong> : Créer un site à l'image de l'entreprise Hardis Group résumant son environnement économique et écologique</li>
+                  <li><strong>Travail personnel</strong> : J'ai réalisé la page d'accueil, de contexte et de relations</li>
+                </ul>
+              </div>
+            </a>
+            <div>
+              <h3>Situation d'apprentissage et d'évaluation en base de données</h3>
+              <ul>
+                <li><strong>Objectif</strong> : Créer une base de données à partir de fichier CSV sur le Titanic</li>
+                <li><strong>Compétences</strong> : Travail d'équipe, Optimisation de la base de données, Modéliser une base de données</li>
+                <li><strong>Description</strong> : Par groupe de deux, nous avons dû modéliser une base de données à partir d'un fichier CSV contenant beaucoup d'information sur le Titanic afin d'en tirer une analyse.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Situation d'apprentissage et d'évaluation en base de données</h3>
+              <ul>
+                <li><strong>Objectif</strong> : Créer une base de données à partir de fichier CSV sur les accidents de la route</li>
+                <li><strong>Compétences</strong> : Travail d'équipe, Optimisation de la base de données, Modéliser une base de données, Transformer des données, Décrire des données, Créer des graphiques, Produire des statistiques</li>
+                <li>
+                  <strong>Description</strong> : Par groupe de deux, nous avons récupérer des fichiers CSV sur le site de statistique de l'État afin de les analyser. 
+                  Tout d'abord, les données étaient scindées en deux fichiers: le fichier de données de 2006 à 2018 et celui de 2019 à 2021. 
+                  Nous avons dû transformer les données afin de les exprimer de la même manière pour fusionner les deux fichier CSV dans une base de données en SQL.
+                  Une fois ceci fait, nous avons créer des vues pour faciliter notre analyse.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>
+
+      </main>
+      <!-- Barre des réseaux sociaux -->
+      <footer>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="https://github.com" target="_blank"><img src="../img/github-logo.png" alt="Github"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="../img/twitter-logo.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="../img/instagram-logo.png" alt="Instagram"></a></li>
+          </ul>
+        </nav>
+      </footer>
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        var aside = document.querySelector("aside");
+        var delta = 40; // Nombre de pixels pour détecter le défilement
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (Math.abs(prevScrollpos - currentScrollPos) > delta) {
+                if (currentScrollPos > prevScrollpos) {
+                    // Faites défiler vers le bas
+                    aside.classList.add("plie");
+                } else {
+                    // Faites défiler vers le haut
+                    aside.classList.remove("plie");
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        }
+      </script>
+    </body>
+  </html>
+
+

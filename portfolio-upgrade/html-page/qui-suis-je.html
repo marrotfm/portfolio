@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+  <html lang="fr">
+    <head>
+      <meta charset="UTF-8">
+      <title>Qui suis je ?</title>
+      <link rel="stylesheet" href="../css-page/styleSheet.css"> <!-- Feuille de style principale -->
+      <link rel="stylesheet" href="../css-page/color-system.css"> <!-- Changement de thème ici -->
+    </head>
+
+    <body>
+
+        <!-- 
+          Barre de navigation principale.
+          À noter : le lien actif contient un nom de classe "actif"
+        -->
+      <header>
+        <nav>
+          <ul>
+            <li><a href="homepage.html">Accueil</a></li>
+            <li><a class="actif" href="qui-suis-je.html">Qui-suis-je ?</a></li>
+            <li><a href="mes-projets.html">Mes projets</a></li>
+            <li><a href="me-contacter.html">Me contacter</a></li>
+          </ul>
+        </nav>
+        <hr>
+      </header>
+      <main id="qui-suis-je">
+
+        <!-- 
+          Menu latéral montrant une photo de profil
+          ainsi que des informations personnelles
+        -->
+        <aside>
+          <div>
+            <figure>
+              <img src="../img/photo-profil-licorne.png" alt="Photo de profil" class="profil">
+            </figure>
+            <!-- Informations personnelles -->
+            <div class="infoPerso">
+              <h2>Matys Marrot-Fourralo</h2>
+              <ul>
+                <li>&#128100; Étudiant en première année du BUT informatique</li>
+                <li>&#128205; IUT2 Place Doyen Gosse</li>
+                <li>&#128381; 0612345678</li>
+                <li>&#128231; <a href="mailto:matys.marrot-fourralo@etu.univ-grenoble-alpes.fr">Matys.Marrot-Fourralo@etu.univ-grenoble-alpes.fr</a></li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Le contenu principal apparait ici -->
+        <article>
+
+          <!-- Titre de la page -->
+          <h1>Me connaître</h1>
+          <div class="groupe">
+            <div>
+              <h3>Ma vie</h3>
+              <ul>
+                <li>Matys Marrot</li>
+                <li>18 ans</li>
+                <li>Isère</li>
+                <li>Étudie à Grenoble</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Mes études</h3>
+              <ul>
+                <li>Brevet des collèges: Mention très bien </li>
+                <li>Baccalauréat: Mention Bien</li>
+                <li>BUT Informatique: 1ère année</li>
+              </ul>
+            </div>            
+            <div>
+              <h3>Mes passions</h3>
+              <ul>
+                <li>Le développement informatique</li>
+                <li>L'hardware</li>
+                <li>Les jeux vidéos</li>
+                <li>La musculation</li>
+              </ul>
+            </div>
+          </div>
+
+        </article>
+
+      </main>
+      <!-- Barre des réseaux sociaux -->
+      <footer>
+        <hr>
+        <nav>
+          <ul>
+            <li><a href="https://github.com" target="_blank"><img src="../img/github-logo.png" alt="Github"></a></li>
+            <li><a href="https://twitter.com" target="_blank"><img src="../img/twitter-logo.png" alt="Twitter"></a></li>
+            <li><a href="https://instagram.com" target="_blank"><img src="../img/instagram-logo.png" alt="Instagram"></a></li>
+          </ul>
+        </nav>
+      </footer>
+      <script>
+        var prevScrollpos = window.pageYOffset;
+        var aside = document.querySelector("aside");
+        var delta = 40; // Nombre de pixels pour détecter le défilement
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (Math.abs(prevScrollpos - currentScrollPos) > delta) {
+                if (currentScrollPos > prevScrollpos) {
+                    // Faites défiler vers le bas
+                    aside.classList.add("plie");
+                } else {
+                    // Faites défiler vers le haut
+                    aside.classList.remove("plie");
+                }
+                prevScrollpos = currentScrollPos;
+            }
+        }
+      </script>
+    </body>
+  </html>
+

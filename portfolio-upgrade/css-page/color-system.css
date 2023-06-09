@@ -1,0 +1,49 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background: url(../img/fond-noir-coupe.png) repeat;
+        color: white;
+        background-color: black;
+    }
+    header, footer {
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    main aside, main aside a  {
+        background-color: rgba(0, 0, 0, 0.9);
+        color: white;
+    }
+    #qui-suis-je .groupe div, #mes-projets .groupe div, #mes-projets .v-groupe div, #installationPoste .resume div{
+        border: 5px double white;
+        background-color: rgba(47, 20, 255, 0.068);
+    }
+    #mes-projets .v-groupe a {
+        color: white;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: url(../img/fond-blanc-coupe.png) repeat;
+        color: black;
+        background-color: white;
+    }
+    header, footer {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    main aside, main aside a {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: black;
+    }
+    #qui-suis-je .groupe div, #mes-projets .groupe div, #mes-projets .v-groupe div, #installationPoste .resume div {
+        border: 5px black double;
+        background-color: rgba(98, 143, 255, 0.4);
+    }
+    #mes-projets .groupe .project a{
+        color: rgb(32, 84, 139);
+    }
+    #mes-projets .groupe .project a:hover {
+        color: rgb(6, 54, 105);
+    }
+    #mes-projets .v-groupe a {
+        color: black;
+    }
+}
